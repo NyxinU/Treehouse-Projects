@@ -11,14 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var funFactLabel: UILabel!
-    let arr: [String] = ["A","B","C","D","E","F","G"]
-    var cur: Int = 0
+    let colorProvider = BackgroundColorProvider()
+    let arr = FactProvider()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        funFactLabel.text = arr[cur]
+        funFactLabel.text = arr.arr[Int.random(in: 0 ..< arr.arr.count)]
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,13 +27,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showFact() {
-        if (cur + 1) > arr.count - 1 {
-            cur = 0
-        } else {
-            cur += 1
-        }
-        funFactLabel.text = arr[cur]
+        funFactLabel.text = arr.arr[Int.random(in: 0 ..< arr.arr.count)]
+        
+        let randomColor = colorProvider.randomColor()
+        
+        view.backgroundColor = randomColor
     }
-    
 }
 

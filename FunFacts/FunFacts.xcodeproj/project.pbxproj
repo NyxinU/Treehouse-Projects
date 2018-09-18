@@ -12,6 +12,8 @@
 		5008A5EB214AE25F00A19B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5008A5E9214AE25F00A19B6D /* Main.storyboard */; };
 		5008A5ED214AE26100A19B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5008A5EC214AE26100A19B6D /* Assets.xcassets */; };
 		5008A5F0214AE26100A19B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5008A5EE214AE26100A19B6D /* LaunchScreen.storyboard */; };
+		5025C45E21506E5F00F3BD82 /* FactProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5025C45D21506E5F00F3BD82 /* FactProvider.swift */; };
+		509974FB2151BC3400D1DEE1 /* BackgroundColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509974FA2151BC3400D1DEE1 /* BackgroundColorProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5008A5EC214AE26100A19B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5008A5EF214AE26100A19B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5008A5F1214AE26100A19B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5025C45D21506E5F00F3BD82 /* FactProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactProvider.swift; sourceTree = "<group>"; };
+		509974FA2151BC3400D1DEE1 /* BackgroundColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColorProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 				5008A5E7214AE25F00A19B6D /* ViewController.swift */,
 				5008A5E9214AE25F00A19B6D /* Main.storyboard */,
 				5008A5EC214AE26100A19B6D /* Assets.xcassets */,
+				509974FA2151BC3400D1DEE1 /* BackgroundColorProvider.swift */,
 				5008A5EE214AE26100A19B6D /* LaunchScreen.storyboard */,
 				5008A5F1214AE26100A19B6D /* Info.plist */,
+				5025C45D21506E5F00F3BD82 /* FactProvider.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					5008A5E1214AE25F00A19B6D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -137,6 +144,8 @@
 			files = (
 				5008A5E8214AE25F00A19B6D /* ViewController.swift in Sources */,
 				5008A5E6214AE25F00A19B6D /* AppDelegate.swift in Sources */,
+				509974FB2151BC3400D1DEE1 /* BackgroundColorProvider.swift in Sources */,
+				5025C45E21506E5F00F3BD82 /* FactProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NXN.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -311,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NXN.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
